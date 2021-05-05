@@ -18,11 +18,21 @@
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@next/plugin-storybook": "^10.2.1-canary.2",
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/addon-links": "^6.2.9",
-    "@storybook/builder-webpack5": "^6.2.9",
+    "@storybook/addon-actions": "^6.3.0-alpha.19",
+    "@storybook/addon-essentials": "^6.3.0-alpha.19",
+    "@storybook/addon-links": "^6.3.0-alpha.19",
+    "@storybook/builder-webpack5": "^6.3.0-alpha.19",
     "@storybook/react": "^6.2.9",
     "babel-loader": "^8.0.5"
+  },
+  "resolutions": {
+    "css-loader": "^5.0.0",
+    "dotenv-webpack": "^7.0.0",
+    "html-webpack-plugin": "^5.0.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.0",
+    "webpack": "^5.24.0",
+    "webpack-dev-middleware": "^4.1.0",
+    "webpack-virtual-modules": "^0.4.2"
   }
 }

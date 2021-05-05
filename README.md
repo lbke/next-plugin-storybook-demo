@@ -11,6 +11,10 @@ For development purpose, please use the latest version ofr `@next/plugin-storybo
 We add example usage of Next.js core feature one at a time, and check if the `@next/plugin-storybook` supports them correctly when we run Storybook. For instance, path aliases, styled JSX, CSS modules...
 If not, we must improve `@next/plugin-storybook` with relevant fixes.
 
+### Finish update to Webpack 5
+
+This is mostly on Storybook side, Webpack 5 update is not completely stable (see https://github.com/storybookjs/storybook/issues/14044).
+Currently we need resolutions to have only one version of Webpack and it doesn't seem to be enough.
 
 ### Stabilizing @next/plugin-storybook
 
