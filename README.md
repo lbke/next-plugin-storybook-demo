@@ -4,6 +4,20 @@ This example shows a default set up of Storybook that includes the same build fe
 
 /!\ This example includes experimental features. Use `with-storybook` for a simpler but safer example.
 
+## TODO
+
+We add example usage of Next.js core feature one at a time, and check if the `@next/plugin-storybook` supports them correctly when we run Storybook. For instance, path aliases, styled JSX, CSS modules...
+If not, we must improve `@next/plugin-storybook` with relevant fixes.
+
+### Stabilizing @next/plugin-storybook
+
+See main issue here: https://github.com/vercel/next.js/issues/19345
+See absolute import issue here: https://github.com/storybookjs/storybook/issues/11639
+
+### Supporting CSS modules
+
+They don't work out-of-the box, but they can be supported by adding relevant package in `@next/plugin-storybook` (https://github.com/vercel/next.js/issues/19345#issuecomment-758563228).
+
 ## TypeScript
 
 As of v6.0, Storybook has built-in TypeScript support, so no configuration is needed. If you want to customize the default configuration, refer to the [TypeScript docs](https://storybook.js.org/docs/react/configure/typescript).

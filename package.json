@@ -16,10 +16,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@next/plugin-storybook": "^10.0.8",
-    "@storybook/addon-essentials": "6.0.26",
-    "@storybook/addon-links": "6.0.26",
-    "@storybook/react": "6.0.26",
+    "@babel/core": "^7.14.0",
+    "@next/plugin-storybook": "^10.2.1-canary.2",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/builder-webpack5": "^6.2.9",
+    "@storybook/react": "^6.2.9",
     "babel-loader": "^8.0.5"
   }
 }

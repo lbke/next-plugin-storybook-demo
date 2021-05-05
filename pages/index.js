@@ -1,4 +1,4 @@
-import HelloWorld from '../components'
+import HelloWorld from "../components/pathAliasToLibHello";
 
 export default function Home() {
   return (
@@ -6,5 +6,5 @@ export default function Home() {
       <h1>Simple Storybook Example</h1>
       <HelloWorld />
     </div>
-  )
+  );
 }
