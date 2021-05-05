@@ -4,10 +4,13 @@ This example shows a default set up of Storybook that includes the same build fe
 
 /!\ This example includes experimental features. Use `with-storybook` for a simpler but safer example.
 
+For development purpose, please use the latest version ofr `@next/plugin-storybook` from Next.js canary branch (clone Next, yarn, yarn dev, and `yarn link` the package to use it locally).
+
 ## TODO
 
 We add example usage of Next.js core feature one at a time, and check if the `@next/plugin-storybook` supports them correctly when we run Storybook. For instance, path aliases, styled JSX, CSS modules...
 If not, we must improve `@next/plugin-storybook` with relevant fixes.
+
 
 ### Stabilizing @next/plugin-storybook
 
