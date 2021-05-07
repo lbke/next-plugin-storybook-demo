@@ -34,4 +34,6 @@ yarn-error.log*
 .vercel
 
 # Storybook
-/storybook-static
+/storybook-static.yalc/
+yalc.lock
+.yalc/

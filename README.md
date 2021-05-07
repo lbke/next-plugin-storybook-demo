@@ -4,7 +4,23 @@ This example shows a default set up of Storybook that includes the same build fe
 
 /!\ This example includes experimental features. Use `with-storybook` for a simpler but safer example.
 
-For development purpose, please use the latest version ofr `@next/plugin-storybook` from Next.js canary branch (clone Next, yarn, yarn dev, and `yarn link` the package to use it locally).
+## Developing @next/plugin-storybook
+For development purpose, please use the latest version of `@next/plugin-storybook` from Next.js canary branch (clone Next, yarn, yarn dev).
+Then link it **using yalc**. `yarn link` will cause issues with Webpack version, while Yalc simulates a local NPM registry and is closer to real install.
+
+```sh
+# In next.js
+cd packages/next-plugin-storybook
+yalc publish
+# NOTE: you might also need to link packages/next the same way, in case you have unexpected errors
+```
+
+```sh
+# In this repository
+yalc link @next/plugin-storybook
+```
+
+And do this again on every local update of next-plugin-storybook.
 
 ## TODO
 
