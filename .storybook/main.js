@@ -8,7 +8,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@next/plugin-storybook",
   ],
-  core: {
-    builder: "webpack5",
-  },
+  //core: {
+  //  builder: "webpack5",
+  //},
 };

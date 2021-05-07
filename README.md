@@ -18,6 +18,8 @@ yalc publish
 ```sh
 # In this repository
 yalc link @next/plugin-storybook
+# Also install the sub packages
+cd .yalc/packages/next && yarn
 ```
 
 And do this again on every local update of next-plugin-storybook.
