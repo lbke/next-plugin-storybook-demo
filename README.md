@@ -4,7 +4,14 @@ This example shows a default set up of Storybook that includes the same build fe
 
 /!\ This example includes experimental features. Use `with-storybook` for a simpler but safer example.
 
+## Webpack 5/4
+
+Main version uses Webpack 5, but doesn't work.
+
+Use branch "with-webpack-4" for a version that works (but uses Webpack 4).
+
 ## Developing @next/plugin-storybook
+
 For development purpose, please use the latest version of `@next/plugin-storybook` from Next.js canary branch (clone Next, yarn, yarn dev).
 Then link it **using yalc**. `yarn link` will cause issues with Webpack version, while Yalc simulates a local NPM registry and is closer to real install.
 
