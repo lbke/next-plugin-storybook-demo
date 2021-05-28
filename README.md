@@ -35,8 +35,9 @@ And do this again on every local update of next-plugin-storybook.
 Then, you need to make sure you are using the version of Webpack bundled by Next
 
 ```sh
+# in this repo
 cp node_modules/webpack/lib/index.js node_modules/webpack/lib/index.js.backup
-/code/next-plugin-storybook-demo$ cp /code/next-plugin-storybook-demo/.yalc/next/dist/compiled/webpack/bundle5.js node_modules/webpack/lib/index.js
+cp ./.yalc/next/dist/compiled/webpack/bundle5.js node_modules/webpack/lib/index.js
 ```
 
 
