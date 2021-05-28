@@ -10,7 +10,7 @@ Main version uses Webpack 5, but doesn't work.
 
 Use branch "with-webpack-4" for a version that works (but uses Webpack 4).
 
-## Developing @next/plugin-storybook
+## Local development of @next/plugin-storybook
 
 For development purpose, please use the latest version of `@next/plugin-storybook` from Next.js canary branch (clone Next, yarn, yarn dev).
 Then link it **using yalc**. `yarn link` will cause issues with Webpack version, while Yalc simulates a local NPM registry and is closer to real install.
@@ -19,15 +19,26 @@ Then link it **using yalc**. `yarn link` will cause issues with Webpack version,
 # In next.js
 cd packages/next-plugin-storybook
 yalc publish
+cd packages/next
+yalc publish
 # NOTE: you might also need to link packages/next the same way, in case you have unexpected errors
 ```
 
 ```sh
 # In this repository
 yalc link @next/plugin-storybook
+yalc link next
 ```
 
 And do this again on every local update of next-plugin-storybook.
+
+Then, you need to make sure you are using the version of Webpack bundled by Next
+
+```sh
+cp node_modules/webpack/lib/index.js node_modules/webpack/lib/index.js.backup
+/code/next-plugin-storybook-demo$ cp /code/next-plugin-storybook-demo/.yalc/next/dist/compiled/webpack/bundle5.js node_modules/webpack/lib/index.js
+```
+
 
 ## TODO
 
@@ -47,6 +58,8 @@ See absolute import issue here: https://github.com/storybookjs/storybook/issues/
 ### Supporting CSS modules
 
 They don't work out-of-the box, but they can be supported by adding relevant package in `@next/plugin-storybook` (https://github.com/vercel/next.js/issues/19345#issuecomment-758563228).
+
+----
 
 ## TypeScript
 
